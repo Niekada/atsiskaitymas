@@ -6,8 +6,7 @@ import { useContext } from "react";
 
 const Routes = () => {
   const { isLoggedIn } = useContext(UserContext);
-//   const { Layout, routes } = isLoggedIn ? mainLayoutRoutes : authLayoutRoutes;
-  const { Layout, routes } = mainLayoutRoutes;
+  const { Layout, routes } = isLoggedIn ? mainLayoutRoutes : authLayoutRoutes;
 
   return (
     <RoutesWrapper>
